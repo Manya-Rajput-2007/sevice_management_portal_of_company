@@ -1,0 +1,38 @@
+{
+  "name": "software_project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"No tests configured\"",
+    "server": "node backend/server.js",
+    "client": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "start": "node backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb-memory-server": "^11.2.0",
+    "mongoose": "^9.10.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "axios": "^1.20.0",
+    "concurrently": "^10.0.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.3",
+    "recharts": "^3.10.1",
+    "vite": "^8.3.0"
+  }
+}
